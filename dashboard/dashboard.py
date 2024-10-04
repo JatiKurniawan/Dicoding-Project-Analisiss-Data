@@ -341,7 +341,7 @@ def time_category_bar_graph(df):
     st.pyplot(fig)
 
 # Get data
-all_df = pd.read_csv("dashboard/dashboard.csv")
+all_df = pd.read_csv("dashboard/dashboard_data.csv")
 all_df.sort_values(by="date_time", inplace=True)
 all_df.reset_index(inplace=True)
 all_df['date_time'] = pd.to_datetime(all_df['date_time'], format='%Y-%m-%d %H:%M:%S')
